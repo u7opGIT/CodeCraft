@@ -546,7 +546,7 @@ section {
 
 .step {
     display: flex;
-    flex-direction: column; /* Текст під іконкою */
+    flex-direction: column;
     align-items: center;
     gap: 10px;
     text-align: center;
@@ -561,9 +561,9 @@ section {
 
 /* СТРІЛКИ */
 .step.arrow {
-    font-size: 40px; /* Збільшений розмір */
+    font-size: 40px;
     color: #444;
-    padding-bottom: 25px; /* Піднімаємо стрілку, щоб вона була на рівні іконок */
+    padding-bottom: 25px;
     user-select: none;
 }
 
@@ -583,7 +583,7 @@ section {
 .form textarea {
     width: 100%;
     padding: 14px 18px;
-    margin-bottom: 15px; /* Відступ між полями */
+    margin-bottom: 15px;
     background: #2a2a2a;
     border: 1px solid transparent;
     border-radius: 8px;
@@ -601,7 +601,7 @@ section {
 .form textarea {
     height: 120px;
     resize: vertical;
-    margin-bottom: 30px; /* Збільшений відступ в кінці форми перед кнопкою */
+    margin-bottom: 30px;
 }
 
 /* КНОПКА */
@@ -643,7 +643,7 @@ section {
 
 .footer-container {
     max-width: 1100px;
-    margin-left: 100px;   /* як в інших секціях */
+    margin-left: 100px;
     margin-right: 40px;
 
     padding: 0 40px;
@@ -688,4 +688,56 @@ section {
 
 .footer-right a:hover {
     color: var(--color-brand-green);
-}   
+}  
+
+
+
+.popup-buildcost {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content-buildcost {
+    background: #2a2424;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    width: 300px;
+}
+
+.close {
+    cursor: pointer;
+    float: right;
+    font-size: 20px;
+}
+
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0,0,0,0.7);
+
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background: #2a2424;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    width: 300px;
+}
